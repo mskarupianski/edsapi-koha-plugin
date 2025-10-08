@@ -897,17 +897,8 @@ function SetEDSCartField() {
 }
 
 
-
-function sendBasket() { // override function in basket.js
-	var nameCookie = "bib_list";
-	var valCookie = readCookie(nameCookie);
-	var strCookie = nameCookie + "=" + valCookie;
-
-	var loc = "[% PLUGIN_HTTP_PATH %]/opac/2311/opac-sendbasket.pl?" + strCookie;
-
-	var optWin = "scrollbars=yes,resizable=yes,height=600,width=900,top=50,left=100";
-	var win_form = open(loc, "win_form", optWin);
-}
+[%# @author MS: Deleted because it is not working in 24.11 %]
+[%# function sendBasket() {...} // override function in basket.js %]
 
 function downloadBasket() { // override function in basket.js
 	var nameCookie = "bib_list";
